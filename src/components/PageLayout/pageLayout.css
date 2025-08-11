@@ -1,0 +1,71 @@
+.layout {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 220px;
+  background: #1295f9;
+  color: #fff;
+  padding: 1rem;
+  overflow: auto;
+}
+
+.sidebar h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.sidebar nav a,
+.dropbtn {
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.75rem;
+  border-radius: 4px;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+.dropbtn svg {
+  float: right;
+  vertical-align: middle;
+}
+
+.sidebar nav a:hover,
+.dropbtn:hover {
+  background: #0789e7;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-content {
+  display: none;
+  flex-direction: column;
+  background: #0789e7;
+  border-radius: 4px;
+  margin-top: 0.25rem;
+}
+
+.dropdown.open .dropdown-content {
+  display: flex;
+}
+
+.content {
+  flex: 1;
+  padding: 2rem;
+  min-height: 100vh;
+  overflow: auto;
+}
